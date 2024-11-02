@@ -1,23 +1,26 @@
 body{
     margin: 0;
-    font-family: Poppins;
+    color: rgb(223, 183, 148);
+
 }
 .container{
-    width: 900px;
+    width: 450;
     margin: auto;
-    max-width: 90vw;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
     transition: transform .5s;
 }
-svg{
-    width: 30px;
+.icon-cart i{
+    padding-right: 20px;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    background-color: #353432;
 }
 .icon-cart{
     position: relative;
@@ -25,19 +28,46 @@ header{
 .icon-cart span{
     position: absolute;
     background-color: red;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     color: #fff;
     top: 50%;
-    right: -20px;
+    right: 10px;
 }
 .title{
     font-size: xx-large;
+    margin-left: 10px;
+    margin-right: 5px;
 }
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .sectionOne {
+    color: white;
+    position: relative;
+    background: url("../assets/Restaur.mp4") repeat center center fixed;
+    background-size: cover;
+    background-position-y: bottom;
+    height: 100%;;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+  }
+  
 .listProduct .item img{
     width: 90%;
     filter: drop-shadow(0 50px 20px #0009);
